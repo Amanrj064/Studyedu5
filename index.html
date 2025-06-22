@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyEdu - Learn with Videos & PDFs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📘 StudyEdu</h1>
+    <nav>
+      <a href="admin.html">Admin Panel</a>
+    </nav>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search resources..." />
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="S.St">S.St</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="resourceList">
+    <div class="card" data-title="Algebra Basics" data-category="Math">
+      <img src="https://via.placeholder.com/300x180.png?text=Algebra+Video" alt="Thumbnail">
+      <h2>Algebra Basics</h2>
+      <p>Category: Math</p>
+      <button onclick="window.open('https://www.youtube.com/watch?v=example', '_blank')">▶ Watch Video</button>
+      <button onclick="window.open('https://drive.google.com/file/d/xyz/view', '_blank')">📄 View PDF</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StudyEdu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

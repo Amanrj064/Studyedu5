@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - NeonEdu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🔐 Admin Panel</h1>
+  </header>
+
+  <main>
+    <div id="loginBox">
+      <input type="password" id="adminPassword" placeholder="Enter Admin Password"/>
+      <button onclick="checkLogin()">Login</button>
+    </div>
+
+    <div id="uploadForm" style="display:none;">
+      <h2>📤 Upload New Resource</h2>
+      <input type="text" id="title" placeholder="Title"/><br/>
+      <select id="category">
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="S.St">S.St</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+      </select><br/>
+      <input type="url" id="videoLink" placeholder="Video URL"/><br/>
+      <input type="url" id="pdfLink" placeholder="PDF URL"/><br/>
+      <input type="url" id="thumbnail" placeholder="Thumbnail Image URL"/><br/>
+      <button onclick="alert('Feature requires backend to store. Use HTML edit.')">Submit</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NeonEdu Admin</p>
+  </footer>
+
+  <script>
+    function checkLogin() {
+      const password = document.getElementById('adminPassword').value;
+      if (password === 'amanraj@064') {
+        document.getElementById('loginBox').style.display = 'none';
+        document.getElementById('uploadForm').style.display = 'block';
+      } else {
+        alert('Incorrect password');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #00f7ff;
+}
+header {
+  background: #1c1c1c;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px #00f7ff33;
+}
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00f7ff;
+}
+nav a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+input, select, button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+input[type='text'], input[type='url'], input[type='password'], select {
+  width: 300px;
+}
+main {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px #00f7ff55;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.card h2 {
+  font-size: 1.2rem;
+  color: #00f7ff;
+}
+.card button {
+  background: #00f7ff;
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.card button:hover {
+  background: #00aabb;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1c1c1c;
+  color: #00f7ff;
+  font-size: 0.9rem;
+}
+
